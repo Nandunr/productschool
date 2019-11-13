@@ -1,16 +1,10 @@
-<?php
+<!DOCTYPE html>
+<html>
+<body>
 
-$code = filter_input(INPUT_GET, 'code');
+<h1>My First Heading</h1>
 
-$scope = filter_input(INPUT_GET, 'scope');
+<p>My first paragraph.</p>
 
-$error = filter_input(INPUT_GET, 'error');
-
-if (empty($error)) {
-	$q = "code=$code&scope=$scope";	
-} else {
-	$q = "error=$error";
-}
-
-header("Location: http://52.6.140.231/boost-ltv/controller/google-redirect.php?$q");
-exit();
+</body>
+</html>
